@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -24,4 +26,26 @@ public class MainActivity extends AppCompatActivity {
         message.setText("");
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menue, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Toast.makeText(this, "Selected Item: " +item.getTitle(), Toast.LENGTH_SHORT).show();
+        switch (item.getItemId()) {
+            case R.id.first:
+                startActivity(new Intent(this,activityone.class));
+                // do your code
+                return true;
+            case R.id.second:
+                startActivity(new Intent(this,activitytwo.class));
+                // do your code
+                return true;
+             default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }
+
