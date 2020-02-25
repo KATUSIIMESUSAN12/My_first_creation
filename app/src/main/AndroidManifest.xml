@@ -9,13 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activitytwo"></activity>
+        <activity android:name=".list"></activity>
+        <activity android:name=".activitytwo" />
         <activity android:name=".activityone" />
         <activity android:name=".kats" />
         <activity android:name=".susan" />
         <activity android:name=".sue" />
         <activity android:name=".DisplayMessageActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
