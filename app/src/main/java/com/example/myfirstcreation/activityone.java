@@ -18,7 +18,7 @@ Button btn1,btn2;
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                media=MediaPlayer.create(getApplicationContext(),R.raw.ingoma);
+                media=MediaPlayer.create(getApplicationContext(),R.raw.come);
                 media.start();
             }
         });

@@ -8,4 +8,10 @@
     <item
         android:id="@+id/second"
         android:title="C file" />
+    <item
+        android:id="@+id/email"
+        android:title="Email" />
+    <item
+        android:id="@+id/Call"
+        android:title="call" />
 </menu>
