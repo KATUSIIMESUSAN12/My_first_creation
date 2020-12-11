@@ -14,4 +14,10 @@
     <item
         android:id="@+id/Call"
         android:title="call" />
+    <item
+        android:id="@+id/serve"
+        android:title="Services" />
+    <item
+        android:id="@+id/store"
+        android:title="Storage" />
 </menu>

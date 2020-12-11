@@ -88,6 +88,16 @@ private BroadcastReceiver broadcastReceiver=new BroadcastReceiver() {
                 startActivity(new Intent(this,activityone.class));
                 // do your code
                 return true;
+            case R.id.second:
+                startActivity(new Intent(this,activitytwo.class));
+                // do your code
+                return true;
+            case R.id.store:
+                startActivity( new Intent (this,Storage.class));
+                return true;
+            case R.id.serve:
+                startActivity( new Intent (this,Services.class));
+                return true;
             case R.id.email:
                 Intent intent=new Intent(Intent.ACTION_SEND);
                 intent.setData(Uri.parse("mailto:"));
@@ -113,6 +123,7 @@ private BroadcastReceiver broadcastReceiver=new BroadcastReceiver() {
                     Intent in=new Intent(Intent.ACTION_CALL,Uri.parse("tel:0781732893"));
                     startActivity(in);
                 }
+
                 catch (Exception e){
                     e.printStackTrace();
 
@@ -120,10 +131,7 @@ private BroadcastReceiver broadcastReceiver=new BroadcastReceiver() {
                 return true;
 
 
-            case R.id.second:
-                startActivity(new Intent(this,activitytwo.class));
-                // do your code
-                return true;
+
              default:
                 return super.onOptionsItemSelected(item);
         }
