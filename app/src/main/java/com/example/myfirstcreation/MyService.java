@@ -23,12 +23,14 @@ public class MyService extends Services {
         myPlayer.setLooping(false); // Set looping
     }
 
-    public void onStart(Intent intent, int startid) {
+    public void onStartCommand(Intent intent, int startid) {
         Toast.makeText(this, "Service Started", Toast.LENGTH_LONG).show();
         myPlayer.start();
+
     }
     @Override
     public void onDestroy() {
+        super.onDestroy();
         Toast.makeText(this, "Service Stopped", Toast.LENGTH_LONG).show();
         myPlayer.stop();
     }
